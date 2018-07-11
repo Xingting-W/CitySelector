@@ -1,0 +1,55 @@
+body, div, ul, li, p {
+    padding: 0;
+    margin: 0;
+    font: 16px Noto, Roboto;
+    width: 100%;
+}
+
+.selector > div {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    background-color: #fff;
+    transition: left 100ms;
+}
+
+.sel {
+    left: 0;
+    z-index: 0;
+    padding: 10px;
+}
+
+button {
+    width: 82px;
+    height: 40px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+    border-bottom: 1px solid gray;
+}
+
+.city {
+    left: 100%;
+    z-index: 1;
+}
+
+.county {
+    left: 100%;
+    z-index: 2;
+}
+
+.street {
+    left: 100%;
+    z-index: 3;
+}
