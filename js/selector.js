@@ -29,9 +29,9 @@
         var cityId = e.target.id;
         var index = cityId[4];
         var data = {
-            type: 'post',
+            type: 'get',
             url: 'data/county.json',
-            data: cityId,
+            data: '',
             success: function (data) {
                 data = JSON.parse(data);
                 for (var i = 0; i < data[index].length; i++) {
@@ -53,9 +53,9 @@
         var city_index = countyId[4];
         var county_index = countyId[11];
         var data = {
-            type: 'post',
+            type: 'get',
             url: 'data/street.json',
-            data: countyId,
+            data: '',
             success: function (data) {
                 data = JSON.parse(data);
                 for (var i = 0; i < data[city_index][county_index].length; i++) {
